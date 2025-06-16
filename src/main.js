@@ -26,13 +26,13 @@ function generatePackage() {
 }
 
 function createPackage() {
-  const package = generatePackage();
-  const { width, height, length, mass } = package;
+  const pkge = generatePackage();
+  const { width, height, length, mass } = pkge;
   // console.log(package);
   const sortedPackage = sort(width, height, length, mass);
   const sortedDiv = document.getElementById("sortedPackage");
   sortedDiv.innerHTML = `Package: ${JSON.stringify(
-    package
+    pkge
   )}<br>Status: <b>${sortedPackage}</b>`;
 }
 /**
@@ -55,4 +55,14 @@ function sort(width, height, length, mass) {
   } else {
     return "STANDARD";
   }
+}
+
+// Export the functions for testing
+if (typeof module !== "undefined") {
+  module.exports = {
+    isBulky,
+    isHeavy,
+    sort,
+    generatePackage,
+  };
 }

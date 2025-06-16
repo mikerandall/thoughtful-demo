@@ -5,9 +5,13 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "test": "jest"
   },
   "devDependencies": {
     "parcel": "^2.14.0"
+  },
+  "dependencies": {
+    "jest": "^30.0.0"
   }
 }
