@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parcel Vanilla App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
   </head>
   <body>
-    <h1>Parcel Vanilla App</h1>
-    <p>Edit <code>src/index.html</code> to get started!</p>
+    <article>
+      <h1>Welcome to Thoughtful’s robotic automation factory</h1>
+      <p>
+        Create a new package to sort:
+        <br />
+        <button onClick="createPackage()">Create Package</button>
+      </p>
+      <div id="sortedPackage"></div>
+    </article>
   </body>
 </html>
